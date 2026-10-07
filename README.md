@@ -12,6 +12,10 @@ Edit `index.html` for content and `styles.css` for layout. Commit and push to `m
 
 Mail routing is separate: keep the existing Cloudflare Email Routing MX, SPF and DKIM records and the verified forwarding destination when updating web DNS. Website inquiries use `info@tmasecurity.com`; vulnerability reports can use `security@tmasecurity.com`.
 
+## Search and sharing
+
+`robots.txt` advertises `sitemap.xml`, which lists the canonical homepage. Keep the sitemap and canonical URLs current if pages are added. The homepage includes Organization and WebSite structured data plus Open Graph and X/Twitter preview tags. `og-image.png` is the 1200 × 630 social preview; replace it alongside the metadata if the branding changes.
+
 ## Local preview
 
 From the repository root, run `python -m http.server 8124` and open `http://127.0.0.1:8124/`. The site needs no build step or external assets.
